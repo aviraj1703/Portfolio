@@ -23,22 +23,26 @@ const ContactMe = () => {
     const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";
 
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSONdata,
+      });
 
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-
-    if (response.status === 200) {
-      console.log(resData);
-      setEmailSubmitted(true);
-    } else {
-      console.error(resData);
+      if (response.ok) {
+        const resData = await response.json();
+        console.log(resData);
+        setEmailSubmitted(true);
+      } else {
+        const resData = await response.json();
+        console.error(resData);
+        setEmailSubmitted(false);
+      }
+    } catch (error) {
+      console.error(error);
       setEmailSubmitted(false);
     }
 
@@ -66,26 +70,26 @@ const ContactMe = () => {
             <Link
               href="https://www.linkedin.com/in/avirajsinh-rathod/"
               target="_blank"
-              referrerPolicy="no-referrar"
+              rel="noopener noreferrer"
             >
               <Image
-                src={GitHubIcon}
+                src={LinkedinIcon}
                 height={40}
                 width={40}
-                alt="GitHub Icon"
+                alt="LinkedIn Icon"
                 className="border-2 bg-secondary rounded-full opacity-80 hover:opacity-100"
               />
             </Link>
             <Link
               href="https://github.com/aviraj1703"
               target="_blank"
-              referrerPolicy="no-referrar"
+              rel="noopener noreferrer"
             >
               <Image
-                src={LinkedinIcon}
+                src={GitHubIcon}
                 height={38}
                 width={38}
-                alt="Linkedin Icon"
+                alt="GitHub Icon"
                 className="border-2 bg-blue-700 rounded-md opacity-80 hover:opacity-100"
               />
             </Link>
@@ -144,17 +148,16 @@ const ContactMe = () => {
             >
               Send&nbsp;Email
             </button>
-            {emailSubmitted === true ? (
+            {emailSubmitted === true && (
               <p className="my-2 text-green-500">
                 Message has been sent successfully..!
               </p>
-            ) : null}
-
-            {emailSubmitted === false ? (
+            )}
+            {emailSubmitted === false && (
               <p className="my-2 text-red-500">
                 There is some issue in sending message, try later!
               </p>
-            ) : null}
+            )}
           </form>
         </div>
       </div>
