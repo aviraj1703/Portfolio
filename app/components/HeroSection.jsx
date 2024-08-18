@@ -17,7 +17,7 @@ const HeroSection = () => {
         >
           <h1 className="text-secondary text-4xl text-center sm:text-left lg:text-7xl font-extrabold my-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-primary-500 to-primary-300">
-              Hello, I'm
+              Hello, I&apos;m
             </span>
             <br />
             <br />
