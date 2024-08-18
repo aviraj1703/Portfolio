@@ -73,10 +73,10 @@ const ContactMe = () => {
               rel="noopener noreferrer"
             >
               <Image
-                src={LinkedinIcon}
+                src={GitHubIcon}
                 height={40}
                 width={40}
-                alt="LinkedIn Icon"
+                alt="GitHub Icon"
                 className="border-2 bg-secondary rounded-full opacity-80 hover:opacity-100"
               />
             </Link>
@@ -86,10 +86,10 @@ const ContactMe = () => {
               rel="noopener noreferrer"
             >
               <Image
-                src={GitHubIcon}
+                src={LinkedinIcon}
                 height={38}
                 width={38}
-                alt="GitHub Icon"
+                alt="LinkedIn Icon"
                 className="border-2 bg-blue-700 rounded-md opacity-80 hover:opacity-100"
               />
             </Link>
