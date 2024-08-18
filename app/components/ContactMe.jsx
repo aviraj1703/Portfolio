@@ -57,13 +57,13 @@ const ContactMe = () => {
         <div className="flex flex-col items-center md:items-start gap-1">
           <h2 className="text-secondary text-lg text-center md:text-left md:text-2xl font-extrabold mb-2">
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-primary-500 to-primary-300">
-              Let's connect..!
+              Let&apos;s connect..!
             </span>
           </h2>
           <p className="text-[#808080] text-md lg:text-lg mb-6">
-            Let's connect and turn ideas into reality! Whether you're looking
+            Let&apos;s connect and turn ideas into reality! Whether you&apos;re looking
             for a skilled developer or simply want to discuss innovative tech,
-            I'm excited to collaborate. Reach out, and let's make something
+            I&apos;m excited to collaborate. Reach out, and let&apos;s make something
             incredible together!
           </p>
           <div className="w-fit flex items-center justify-start gap-4">
@@ -138,7 +138,7 @@ const ContactMe = () => {
                 name="message"
                 id="message"
                 required
-                placeholder="Let's talk about..."
+                placeholder="Let&apos;s talk about..."
                 className="bg-slate-100 p-2 border-2 rounded-md w-full text-secondary"
               />
             </div>
