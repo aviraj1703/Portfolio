@@ -27,11 +27,11 @@ const Achievements = () => {
 
   return (
     <section id="achievements" className="mt-20">
-      <div className="border-2 border-b-transparent bg-slate-100 hover:bg-slate-200 rounded-md py-8 px-8 flex flex-row items-center justify-around shadow-md">
+      <div className="border-2 border-b-transparent bg-slate-100 hover:bg-slate-200 rounded-md py-8 px-4 md:px-8 flex flex-col md:flex-row items-center justify-around shadow-md">
         {achievementsList.map((achievement, index) => (
           <div
             key={index}
-            className="flex items-center justify-center gap-4 mx-4"
+            className="flex flex-col md:flex-row items-center justify-center md:gap-4 my-4 md:my-0 md:mx-4"
           >
             <h2 className="text-secondary text-4xl font-bold flex items-center justify-center">
               {achievement.prefix}
@@ -49,7 +49,7 @@ const Achievements = () => {
               />
               {achievement.postfix}
             </h2>
-            <p className="text-[#808080] text-xl">{achievement.metric}</p>
+            <p className="text-[#808080] text-lg md:text-xl">{achievement.metric}</p>
           </div>
         ))}
       </div>

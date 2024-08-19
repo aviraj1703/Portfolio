@@ -35,13 +35,13 @@ const AboutSection = () => {
               About Me
             </span>
           </h2>
-          <p className="text-[#808080] text-base sm:text-lg lg:text-xl mb-6">
+          <p className="text-[#808080] text-md sm:text-lg lg:text-xl mb-6">
             Passionate Software Engineer skilled in MERN stack development, with
             experience in crafting intuitive, user-focused web applications.
             Driven by creativity and a commitment to excellence, I thrive on
             building innovative solutions that make a meaningful impact.
           </p>
-          <div className="w-full flex items-center justify-between">
+          <div className="w-70 md:w-full flex items-center gap-2 justify-between">
             {tabs.map((tabVal, index) => (
               <ButtonTab
                 key={index}

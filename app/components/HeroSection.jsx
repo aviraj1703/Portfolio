@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <section id="/">
-      <div className="grid grid-cols-1 lg:grid-cols-12 xl:grid-cols-12 px-4 xl:px-8 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-12 px-4 xl:px-8 gap-8">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -65,9 +65,9 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-7 lg:col-span-5 flex justify-center mt-4 lg:mt-0"
+          className="col-span-7 md:col-span-5 flex justify-center mt-4 lg:mt-0"
         >
-          <div className="rounded-lg shadow-md bg-[#f9fafb] w-[270px] h-[270px] sm:w-[370px] sm:h-[370px] relative flex items-end justify-center">
+          <div className="rounded-lg shadow-md bg-[#f9fafb] w-[270px] h-[270px] lg:w-[370px] lg:h-[370px] relative flex items-end justify-center">
             <Image
               src="/Profile.png"
               height={310}

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const ProjectCards = ({ project }) => {
   return (
-    <div className="rounded-md md:rounded-lg h-[300px] w-[400px] flex flex-col items-start justify-between overflow-hidden shadow-md">
+    <div className="rounded-md md:rounded-lg h-[200px] w-[300px] lg:h-[300px] lg:w-[400px] flex flex-col items-start justify-between overflow-hidden shadow-md">
       <div
         className="h-52 md:h-72 w-full relative group"
         style={{

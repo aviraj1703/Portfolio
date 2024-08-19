@@ -30,7 +30,6 @@ const Navbar = () => {
   ];
 
   return (
-    <div>
       <nav className="fixed top-0 left-0 right-0 z-10 bg-white border-2 md:shadow-md">
         <div className="flex flex-wrap items-center justify-end md:justify-center mx-auto py-6 px-12">
           <div className="mobile-menu block md:hidden">
@@ -53,8 +52,8 @@ const Navbar = () => {
             )}
             <MenuOverlay navOpen={navOpen} links={navlink} />
           </div>
-          <div className="menu hidden md:block md:w-auto" id="home">
-            <ul className="flex md:flex-row p-4 md:p-0 md:space-x-8 mt-0">
+          <div className="menu hidden md:block w-fit">
+            <ul className="flex flex-row space-x-8 mt-0">
               {navlink.map((link, index) => (
                 <NavLink
                   key={index}
@@ -68,7 +67,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </div>
   );
 };
 
