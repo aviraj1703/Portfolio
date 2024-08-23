@@ -68,7 +68,7 @@ const ContactMe = () => {
           </p>
           <div className="w-fit flex items-center justify-start gap-4">
             <Link
-              href="https://www.linkedin.com/in/avirajsinh-rathod/"
+              href="https://github.com/aviraj1703"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -81,7 +81,7 @@ const ContactMe = () => {
               />
             </Link>
             <Link
-              href="https://github.com/aviraj1703"
+              href="https://www.linkedin.com/in/avirajsinh-rathod/"
               target="_blank"
               rel="noopener noreferrer"
             >
